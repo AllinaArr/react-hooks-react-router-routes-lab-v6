@@ -15,13 +15,13 @@ function Home() {
   const movieList = movies.map((movie) => (
     <MovieCard key={movie.id} title={movie.title} id={movie.id} />
   ));
+
   return (
     <>
       <header>
         <NavBar />
       </header>
       <main>
-        {" "}
         <h1>Home Page</h1>
         {movieList}
       </main>
